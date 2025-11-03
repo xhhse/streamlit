@@ -40,7 +40,7 @@ st.markdown("""
 - Translate text input directly  
 - Upload an English `.txt` file to translate and download the Chinese version
 """)
-st.markdown(f"💻 Device: {'GPU' if torch.cuda.is_available() else 'CPU'}")
+st.markdown(f"Device: {'GPU' if torch.cuda.is_available() else 'CPU'}")
 
 # -------------------------------
 # Load translation pipeline
@@ -74,7 +74,7 @@ if st.button("Translate Text"):
             st.error(f"❌ Translation failed: {e}")
 
 # -------------------------------
-# 5️⃣ File Upload Translation
+# File Upload Translation
 # -------------------------------
 st.subheader("File Translation (.txt)")
 uploaded_file = st.file_uploader("Upload an English .txt file", type=["txt"])
